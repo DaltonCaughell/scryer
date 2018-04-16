@@ -1,7 +1,7 @@
 package services
 
 import (
-	"fmt"
+	//"fmt"
 	"math/rand"
 	"time"
 )
@@ -13,15 +13,15 @@ type DiskDataService struct {
 //GetDiskDataWeekly ...
 func (diskDataService *DiskDataService) GetDiskDataWeekly() [604800]map[time.Time]int {
 	var diskTimeSeries [604800]map[time.Time]int
-	idle := false
-	diskSizeInMB := 100000000
-	currentDisk := 0
+	//idle := false
+	//diskSizeInMB := 100000000
+	//currentDisk := 0
 	now := time.Now()
 	rand.Seed(now.UnixNano())
-	lastWeek := now.AddDate(0, 0, -7)
-	timeIteration := lastWeek
+	//lastWeek := now.AddDate(0, 0, -7)
+	//timeIteration := lastWeek
 
-	for i := 0; i < 604800; i++ {
+	/*for i := 0; i < 604800; i++ {
 		snapShot := make(map[time.Time]int)
 		writeSpeedLow := 1
 		writeSpeedHigh := 1800
@@ -44,6 +44,6 @@ func (diskDataService *DiskDataService) GetDiskDataWeekly() [604800]map[time.Tim
 		fmt.Println(currentDisk)
 		snapShot[timeIteration] = currentDisk
 		diskTimeSeries[i] = snapShot
-	}
+	}*/
 	return diskTimeSeries
 }

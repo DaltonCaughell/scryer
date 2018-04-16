@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "babel-preset-react": "^6.24.1",
     "materialize-css": "^1.0.0-beta",
+    "npm": "^5.8.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-google-charts": "^1.5.7",
